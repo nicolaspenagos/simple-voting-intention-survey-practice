@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Intention Practice</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id = "mainContainer">
+
+        <div id = "pollContainer">
+
+            <h1 id="title">LAPSUS NAPOLEON FRANCO</h1>
+            <p>Register candidate for survey</p>
+            <input id="id" placeholder="ID" type="text">
+            <input id="name" placeholder="Name" type="text">
+            <button id="register"> Register </button>
+            <p>To vote for a candidate, enter their id</p>
+            <input id="registeredId" placeholder="ID" type="text">
+            <button id="vote"> Vote </button>
+
+        </div>
+
+        <div id = "resultsContainer">
+
+            <button id="showCandidates"> Show candidates </button>
+            <button id="showVoting"> Show voting </button>
+
+        </div>
+
+    </div>
+   
+
+</body>
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAfwuo-YVOVMy8tiOXX_F0TktVy6JX5ydI",
+    authDomain: "voting-survey.firebaseapp.com",
+    databaseURL: "https://voting-survey.firebaseio.com",
+    projectId: "voting-survey",
+    storageBucket: "voting-survey.appspot.com",
+    messagingSenderId: "275071573086",
+    appId: "1:275071573086:web:70a682089b84cdc818a8cf",
+    measurementId: "G-N9RK1YPNDT"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="js/index.js"></script>
